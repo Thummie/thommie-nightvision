@@ -7,6 +7,8 @@ RegisterCommand('toggleNV', function()
         if Config.CheckHelmet then
             if GetPedPropIndex(PlayerPedId(), 0) == 116 then
                 canToggle = true
+            else
+                canToggle = false
             end
         else
             canToggle = true
